@@ -5,7 +5,7 @@ Built with flexibility in mind supporting dynamic themes, music player, backgrou
 
 
 **💬 Support Discord**: [Join the Community](https://discord.com/invite/ackuWrBVV3)  
-**🎥 Showcase Video**: [Watch on YouTube](-)
+**🎥 Showcase Video**: [Watch on YouTube](https://www.youtube.com/watch?v=99tjNiifSkg)
 
 <img width="1915" height="1074" alt="image" src="https://github.com/user-attachments/assets/2ff409f7-c4d2-459b-b92b-907c00e34517" />
 
