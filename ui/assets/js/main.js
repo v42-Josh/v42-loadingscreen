@@ -306,7 +306,8 @@ $(document).ready(function () {
             return;
         }
 
-        audio.volume = musicConfig.defaultVolume ?? 0.2;
+        const userVolume = Number(localStorage.getItem("loadingScreenVolume"))
+        audio.volume = ! Number.isNaN(userVolume) ? userVolume : (musicConfig.defaultVolume ?? 0.2);
         $("#volume").val(audio.volume);
 
         loadSong(musicConfig.startIndex || 0, false);
@@ -356,6 +357,7 @@ $(document).ready(function () {
 
         $("#volume").off("input change").on("input change", function () {
             audio.volume = parseFloat($(this).val());
+            localStorage.setItem("loadingScreenVolume", String(audio.volume))
         });
 
         $(".progress-bar").off("click").on("click", function (e) {
